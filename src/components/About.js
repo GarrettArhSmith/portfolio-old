@@ -16,6 +16,9 @@ function About(props) {
                     <li>CSS</li>
                     <li>JAVASCRIPT</li>
                     <li>REACT</li>
+                    <li>EXPRESS</li>
+                    <li>MONGOOSE</li>
+                    <li>MONGO DB</li>
                     <li>PHOTOSHOP</li>
                 </ul>
             </span>
