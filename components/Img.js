@@ -2,24 +2,32 @@ import React from 'react';
 import styled from 'styled-components'
 
 const StyledImage = styled.div`
-    width: 100%;
     height: calc(100vh - 100px);
-    background: url(https://source.unsplash.com/random) center no-repeat;
+    background: url(${props => props.src ? props.src : "https://source.unsplash.com/random"}) 65% 50% no-repeat;
     background-size: cover;
     display: block;
     padding: none;
-    ${'' /* position: relative;
-    top: 1px;
-    left: -1px; */}
-    ${'' /* box-shadow: -5px 5px 15px 0 rgba(0,0,0,0.3); */}
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 768px) {
+        grid-column: 1 / 3;
+    }
+    @media (min-width: 1024px) {
+        grid-column: 2 / 3;
+    }
+    @media (min-width: 1200px) {
+    }
 `
 
-function Img({ style }) {
+function Img({ src }) {
     return (
         <StyledImage
-            style={style}
+            src={src}
         >
-            
+            {/* <img
+                src={src}
+                style={{width: "100%", height: "100%"}}
+            /> */}
         </StyledImage>
     );
 }

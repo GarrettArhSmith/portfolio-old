@@ -22,23 +22,12 @@ const ProjectList = styled.ul`
 `
 
 function work(props) {
-    const variants = {
-        closed: {},
-        open: {
-            transition: { when: "beforeChildren", staggerChildren: 5, delayChildren: 0.2 }
-        }
-    };
 
     const projects = [0,1,2,3]
     return (
         <Container>
             <Navbar />
-            <ProjectList
-                as={motion.ul}
-                variants={variants} 
-                initial={"closed"} 
-                animate={"open"}
-            >
+            <ProjectList>
                 {projects.map(i => (
                     <Project i={i} key={i} />
                 ))}
