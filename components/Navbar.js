@@ -54,7 +54,7 @@ const NavLink = styled.a`
 
 const Logo = styled.a`
     letter-spacing: 3px;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     font-family: Montserrat, san-serif;
     width: 100vw;
@@ -110,16 +110,13 @@ function Navbar(props) {
         <Nav>
             <Link href='/' passHref>
                 <Logo 
-                    style={{color: "#2f2f2f"}}
+                    style={{color: colors.logo}}
                     as={motion.a}
                     name="logo"
-                    onMouseEnter={changeColor}
-                    whileHover={{ 
-                        fontSize: '35px',
-                        fontWeight: 700
-                    }}
+                    onMouseOver={changeColor}
+                    whileHover={{fontSize: '65px'}}
                 >
-                    GARRETT SMITH
+                    GS
                 </Logo>
             </Link>
             {routes.map(route => (

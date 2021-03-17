@@ -10,7 +10,7 @@ body {
     background-color: #fefefe;
     font-family: Montserrat;
     color: #2f2f2f;
-    /* overflow: hidden; */
+    user-select: none;
 }
 
 a {
