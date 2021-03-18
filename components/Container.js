@@ -8,13 +8,13 @@ const StyledContainer = styled.div`
     ${'' /* padding-top: ${props => props.page === "about" && "5rem"};
     grid-gap: ${props => props.page === "about" && "5rem"}; */}
     @media (min-width: 480px) {
-        grid-template-columns: ${props => props.page === "about" && "1fr 1fr"};
     }
     @media (min-width: 768px) {
         margin-top: ${props => props.noMargin ? 0 : "100px"};
-        grid-template-columns: ${props => props.page === "about" && "3fr 2fr"};
+        grid-template-columns: ${props => props.page === "about" && "1fr 1fr"};
     }
     @media (min-width: 1024px) {
+        grid-template-columns: ${props => props.page === "about" && "3fr 2fr"};
     }
     @media (min-width: 1200px) {
     }
