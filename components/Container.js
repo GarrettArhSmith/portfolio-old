@@ -1,18 +1,33 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
+const StyledContainer = styled.div`
     display: grid;
+    grid-template-columns: ${props => props.page === "about" && "1fr"};
     place-items: ${props => props.placeItems};
     min-height: calc(100vh - 100px);
+    ${'' /* padding-top: ${props => props.page === "about" && "5rem"};
+    grid-gap: ${props => props.page === "about" && "5rem"}; */}
     @media (min-width: 480px) {
     }
     @media (min-width: 768px) {
         margin-top: ${props => props.noMargin ? 0 : "100px"};
+        grid-template-columns: ${props => props.page === "about" && "3fr 2fr"};
     }
     @media (min-width: 1024px) {
     }
     @media (min-width: 1200px) {
     }
 `
+
+function Container(props) {
+    return (
+        <StyledContainer 
+            page={props.page}
+            noMargin={props.noMargin}
+        >
+            {props.children}
+        </StyledContainer>
+    )
+}
 
 export default Container
