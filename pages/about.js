@@ -15,25 +15,30 @@ const Contents = styled.div`
 function about(props) {
 
     return (        
-        <Container style ={{gridTemplateColumns: "3fr 2fr"}}>
+        <Container>
             <Navbar />
-            <Contents
-                as={motion.div}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+            <Container 
+                noMargin
+                style={{gridTemplateColumns: "2fr 1fr"}}
             >
-            <div>
-                <h1>ABOUT ME</h1>
-                <p>I'm an aspiring Full-Stack Web Developer, and passionate about developing applications that better the lives of others. I'm currently enrolled in V-School, a FullStack Web Development bootcamp, and I'm constantly learning new skills and improving current ones to make that possible. I also love teaching others about my craft. We are all teachers. We are all students.</p>
-            </div>
-            </Contents>
-            <Img src="/headshot.jpg"
-                as={motion.div}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-            />
+                <Contents
+                    as={motion.div}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                >
+                    <div>
+                        <h1>ABOUT ME</h1>
+                        <p>I'm an aspiring Full-Stack Web Developer, and passionate about developing applications that better the lives of others. I'm currently enrolled in V-School, a FullStack Web Development bootcamp, and I'm constantly learning new skills and improving current ones to make that possible. I also love teaching others about my craft. We are all teachers. We are all students.</p>
+                    </div>
+                </Contents>
+                <Img src="/headshot.jpg"
+                    as={motion.div}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                />
+            </Container>
         </Container>
     );
 }
