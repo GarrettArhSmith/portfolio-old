@@ -15,6 +15,7 @@ const StyledContainer = styled.div`
     }
     @media (min-width: 1024px) {
         grid-template-columns: ${props => props.page === "about" && "3fr 2fr"};
+        grid-template-rows: auto;
     }
     @media (min-width: 1200px) {
     }

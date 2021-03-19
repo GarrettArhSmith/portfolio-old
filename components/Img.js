@@ -7,12 +7,15 @@ const StyledImage = styled.div`
     background-size: cover;
     display: block;
     padding: none;
+    ${'' /* grid-row: 2/3; */}
+    max-height: 45vh;
     @media (min-width: 480px) {
     }
     @media (min-width: 768px) {
     }
     @media (min-width: 1024px) {
         grid-column: 2 / 3;
+        max-height: 100vh;
     }
     @media (min-width: 1200px) {
     }

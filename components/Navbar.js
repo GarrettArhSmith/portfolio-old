@@ -15,6 +15,7 @@ const Nav = styled.nav`
     background-color: #fefefe;
     z-index: 10;
     top: 0;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 0px;
     @media (min-width: 480px) {
     }
     @media (min-width: 768px) {
