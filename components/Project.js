@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { ColorContext } from '../context/ColorProvider'
 
 const ProjectCard = styled.li`
-    height: 40rem;
+    min-height: 40rem;
     cursor: pointer;
     transition: 0.4s ease;
     display: grid;
@@ -22,7 +22,7 @@ const ProjectCard = styled.li`
     @media (min-width: 480px) {
     }
     @media (min-width: 768px) {
-        height: 30rem;
+        ${'' /* min-height: 30rem; */}
     }
     @media (min-width: 1024px) {
     }

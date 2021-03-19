@@ -10,7 +10,6 @@ const StyledImage = styled.div`
     @media (min-width: 480px) {
     }
     @media (min-width: 768px) {
-        grid-column: 1 / 3;
     }
     @media (min-width: 1024px) {
         grid-column: 2 / 3;

@@ -25,12 +25,6 @@ function ColorProvider(props) {
         }))
     }
 
-    function hexToRGB(hex, alpha) {
-        if(hex) {
-            
-        }
-    }
-
     return (
         <ColorContext.Provider
             value={{

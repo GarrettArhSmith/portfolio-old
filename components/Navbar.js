@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import { ColorContext } from '../context/ColorProvider'
 
 const Nav = styled.nav`
-    height: 100vh;
+    height: 40vh;
     width: 100%;
     display: grid;
     grid-template-rows: repeat(4, 1fr);

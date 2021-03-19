@@ -9,7 +9,17 @@ import styled from 'styled-components'
 const Contents = styled.div`
     display: grid;
     place-items: center;
-    padding: 5rem;
+    padding: 2rem;
+    @media (min-width: 480px) {
+        padding: 3rem;
+    }
+    @media (min-width: 768px) {
+        padding: 5rem;
+    }
+    @media (min-width: 1024px) {
+    }
+    @media (min-width: 1200px) {
+    }
 `
 
 function about(props) {
@@ -20,7 +30,6 @@ function about(props) {
             <Container 
                 noMargin
                 page={"about"}
-                style={{gridTemplateColumns: "3fr 2fr"}}
             >
                 <Contents
                     as={motion.div}

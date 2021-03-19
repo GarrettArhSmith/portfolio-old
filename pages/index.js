@@ -10,21 +10,38 @@ import Container from '../components/Container'
 import Header from '../components/Header'
 
 const NameContainer = styled.div`
-    display: grid;
-    width: 600px;
-    position: relative;
-    top: -100px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    font-size: 0.5em;
+    max-width: 100vw;
+    white-space: nowrap;
+    @media (min-width: 480px) {
+        font-size: 0.7em;
+    }
+    @media (min-width: 768px) {
+        font-size: 0.9em;
+    }
+    @media (min-width: 1024px) {
+        font-size: 1.1em;
+    }
+    @media (min-width: 1200px) {
+        font-size: 1.3em;
+    }
 `
 
 export default function Home() {
     const { colors, changeColor } = useContext(ColorContext)
     
     const colorfulName = {
-        justifySelf: "flex-end", 
+        // justifySelf: "flex-end", 
         // width: 0, 
         color: colors.logo, 
         marginLeft: 20,
         cursor: "pointer",
+        textAlign: "right"
     }
 
   return (
@@ -34,9 +51,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
       <Container placeItems="center">
-
+        <Navbar />
         <NameContainer>
             <Header>HI, I'M </Header>
             <Header 
