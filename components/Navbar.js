@@ -126,7 +126,7 @@ function Navbar(props) {
                         as={motion.a}
                         name={route.name}
                         style={{color: "#2f2f2f"}}
-                        initial={`/${route.name}` === pathname && navLinkActive}
+                        initial={pathname.includes(route.name) && navLinkActive}
                         onMouseEnter={changeColor}
                         whileHover={navLinkHover}
                     >

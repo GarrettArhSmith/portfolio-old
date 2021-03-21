@@ -33,7 +33,7 @@ function contact(props) {
     }
 
     return (
-        <Container placeItems="center">
+        <Container>
             <Navbar />
             <LinksContainer color={colors.logo}>
                 <LinkIcon onMouseEnter={handleHover}><AiFillGithub /></LinkIcon>

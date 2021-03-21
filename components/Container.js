@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const StyledContainer = styled.div`
     display: grid;
     grid-template-columns: ${props => props.page === "about" && "1fr"};
-    place-items: ${props => props.placeItems};
+    ${'' /* place-items: ${props => props.placeItems}; */}
     min-height: calc(100vh - 100px);
     ${'' /* padding-top: ${props => props.page === "about" && "5rem"};
     grid-gap: ${props => props.page === "about" && "5rem"}; */}
@@ -26,6 +26,7 @@ function Container(props) {
         <StyledContainer 
             page={props.page}
             noMargin={props.noMargin}
+            placeItems={props.placeItems}
         >
             {props.children}
         </StyledContainer>

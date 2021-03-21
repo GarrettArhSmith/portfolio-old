@@ -8,7 +8,7 @@ const StyledImage = styled.div`
     display: block;
     padding: none;
     ${'' /* grid-row: 2/3; */}
-    max-height: 45vh;
+    max-height: 50vh;
     @media (min-width: 480px) {
     }
     @media (min-width: 768px) {
