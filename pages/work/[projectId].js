@@ -21,12 +21,11 @@ function ProjectPage(props) {
         fetcher
     )
 
-    if (error) return <div>{error.message}</div>
-    if (!data) return <div>Loading...</div>
-
     return (
         <Container placeItems="center">
             <Navbar />
+            {error && <p>{error.message}</p>}
+            {!data && <p>Loading...</p>}
             <h1>{data ? data.name : "No Project Found"}</h1>
         </Container>
     );
