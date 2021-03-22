@@ -7,6 +7,7 @@ const StyledImage = styled.div`
     background-size: cover;
     display: block;
     padding: none;
+    filter: grayscale(1);
     ${'' /* grid-row: 2/3; */}
     max-height: 50vh;
     @media (min-width: 480px) {

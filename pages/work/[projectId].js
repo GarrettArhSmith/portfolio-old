@@ -22,11 +22,14 @@ function ProjectPage(props) {
     )
 
     return (
-        <Container placeItems="center">
+        <Container>
             <Navbar />
             {error && <p>{error.message}</p>}
             {!data && <p>Loading...</p>}
-            <h1>{data ? data.name : "No Project Found"}</h1>
+            <div style={{placeSelf: "center"}}>
+                <h1>{data && data.name}</h1>
+                <p>{data?.tech.join(', ')}</p>
+            </div>
         </Container>
     );
 }

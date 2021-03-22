@@ -1,22 +1,32 @@
 export const projects = [
     {
         id: '1',
-        name: 'Realtime Messaging App'
+        name: 'Realtime Messaging App',
+        tech: ['HTML', 'CSS', 'Javascript', 'React', 'Firebase']
     },
     {
         id: '2',
-        name: 'Weather App'
+        name: 'Student Progress Visualizations',
+        tech: []
     },
     {
         id: '3',
-        name: 'Anonymous Forum'
+        name: 'Weather App',
+        tech: []
     },
     {
         id: '4',
-        name: 'Food Ordering App'
+        name: 'Anonymous Forum',
+        tech: []
     },
     {
         id: '5',
-        name: 'Rock the Vote'
+        name: 'Food Ordering App',
+        tech: []
+    },
+    {
+        id: '6',
+        name: 'Rock the Vote',
+        tech: []
     }
 ]

@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Link from 'next/link'
 import { ColorContext } from '../context/ColorProvider'
 import Navbar from '../components/Navbar'
 import Container from '../components/Container'
@@ -36,7 +37,9 @@ function contact(props) {
         <Container>
             <Navbar />
             <LinksContainer color={colors.logo}>
+            <Link href="https://www.google.com" passHref={true}>
                 <LinkIcon onMouseEnter={handleHover}><AiFillGithub /></LinkIcon>
+            </Link>
                 <LinkIcon onMouseEnter={handleHover}><AiFillLinkedin /></LinkIcon>
                 <LinkIcon onMouseEnter={handleHover}><AiOutlineTwitter /></LinkIcon>
                 <LinkIcon onMouseEnter={handleHover}><VscFilePdf /></LinkIcon>
