@@ -27,6 +27,7 @@ function Container(props) {
             page={props.page}
             noMargin={props.noMargin}
             placeItems={props.placeItems}
+            style={props.style}
         >
             {props.children}
         </StyledContainer>

@@ -37,18 +37,18 @@ function contact(props) {
         <Container>
             <Navbar />
             <LinksContainer color={colors.logo}>
-                <Link href="https://github.com/garrettarhsmith" passHref={true} target="_blank">
+                <a href="https://github.com/garrettarhsmith" target="_blank">
                     <LinkIcon onMouseEnter={handleHover}><AiFillGithub /></LinkIcon>
-                </Link>
-                <Link href="https://www.linkedin.com/in/garrettarhsmith/" passHref={true} target="_blank">
+                </a>
+                <a href="https://www.linkedin.com/in/garrettarhsmith/" target="_blank">
                     <LinkIcon onMouseEnter={handleHover}><AiFillLinkedin /></LinkIcon>
-                </Link>
-                <Link href="https://twitter.com/GarrettArhSmith" passHref={true}target="_blank">
+                </a>
+                <a href="https://twitter.com/GarrettArhSmith" target="_blank">
                     <LinkIcon onMouseEnter={handleHover}><AiOutlineTwitter /></LinkIcon>
-                </Link>
-                <Link href="https://docs.google.com/document/d/1aaSKbGb2L1aJ3M7EtbDZ3dmd2KUc008LjbcxF0Wak7I/export?format=pdf&attachment=false" passHref={true} target="_blank">
+                </a>
+                <a href="https://docs.google.com/document/d/1aaSKbGb2L1aJ3M7EtbDZ3dmd2KUc008LjbcxF0Wak7I/export?format=pdf&attachment=false" target="_blank">
                     <LinkIcon onMouseEnter={handleHover}><VscFilePdf /></LinkIcon>
-                </Link>
+                </a>
             </LinksContainer>
         </Container>
     );

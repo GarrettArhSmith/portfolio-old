@@ -19,7 +19,7 @@ const ProjectCard = styled.li`
     &:hover {
         ${'' /* border-radius: 5px; */}
         ${'' /* box-shadow: 0 0 5px 3px rgba(0,0,0,0.1); */}
-        filter: contrast(1.3);
+        ${'' /* filter: contrast(1.3); */}
         transform: scale(0.9);
         z-index: 9;
     }
@@ -35,12 +35,12 @@ const ProjectCard = styled.li`
 `
 
 const BackgroundImg = styled.div`
-    background: url(https://source.unsplash.com/random) center no-repeat;
+    background: url(${props => props.data.thumbnail ? props.data.thumbnail : 'https://source.unsplash.com/random'}) center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
     opacity: 0.5;
-    filter: grayscale(100%);
+    filter: grayscale(10%);
     display: grid;
     place-items: center;
 `
@@ -62,14 +62,14 @@ function Project({ data }) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    // whileHover={{scale: 1.03}}
-                    // whileTap={{ scale: 1 }}
+                    whileHover={{scale: 0.9}}
+                    whileTap={{ scale: 1 }}
                     onMouseEnter={() => changeColor({target: {name: data.id}}, 0.3)}
                     style={{
                         backgroundColor: colors[data.id]}}
                     // `linear-gradient(${hexToRGB(colors[i],0.3)}, ${hexToRGB(colors[i],0.3)}) 
                 >
-                    <BackgroundImg />
+                    <BackgroundImg data={data} />
                     <h1>{data.name}</h1>
                 </ProjectCard>
             </a>
