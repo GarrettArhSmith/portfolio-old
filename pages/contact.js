@@ -37,7 +37,6 @@ function contact(props) {
         <Container>
             <Navbar />
             <LinksContainer color={colors.logo}>
-                <BackBtn />
                 <a href="https://github.com/garrettarhsmith" target="_blank">
                     <LinkIcon onMouseEnter={handleHover}><AiFillGithub /></LinkIcon>
                 </a>
