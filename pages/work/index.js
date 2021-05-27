@@ -44,7 +44,7 @@ function work(props) {
         <Container>
             <Navbar />
             {error && <p>{error.message}</p>}
-            {!data && <p>Loading...</p>}
+            {/* {!data && <p style={{placeSelf: "center"}}>Loading...</p>} */}
             <ProjectList>
                 {data?.map(project => (
                     <Project key={project.id} data={{...project}} />
