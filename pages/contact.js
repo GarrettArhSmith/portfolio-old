@@ -5,6 +5,7 @@ import Container from '../components/Container'
 import styled from 'styled-components'
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai'
 import { VscFilePdf } from 'react-icons/vsc'
+import BackBtn from '../components/BackBtn';
 
 const LinksContainer = styled.div`
     padding-left: 0;
@@ -36,6 +37,7 @@ function contact(props) {
         <Container>
             <Navbar />
             <LinksContainer color={colors.logo}>
+                <BackBtn />
                 <a href="https://github.com/garrettarhsmith" target="_blank">
                     <LinkIcon onMouseEnter={handleHover}><AiFillGithub /></LinkIcon>
                 </a>

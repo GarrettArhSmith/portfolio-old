@@ -21,7 +21,38 @@ const HeaderImg = styled.img`
 `
 
 const Tech = styled.p`
-    color: ${props => props.color};
+    color: gray;
+`
+
+const Head = styled.div`
+    display: flex;
+    place-items: center;
+    gap: 2rem;
+`
+
+const Title = styled.h1`
+`
+
+const DemoBtn = styled.a`
+    background: ${props => props.color};
+    color: white;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    filter: opacity(75%);
+    transition: 0.2s ease;
+    padding: 0 6px;
+    display: grid;
+    place-items: center;
+    font-size: 0.9em;
+    &:hover {
+        filter: opacity(100%);
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    &:active {
+        transform: scale(1);
+    }
 `
 
 const Content = styled.div`
@@ -70,8 +101,13 @@ function ProjectPage(props) {
                 <HeaderImg src={data?.thumbnail ? data.thumbnail : 'https://source.unsplash.com/random'} />
                 <Content>
                     <BackBtn />
-                    <h1>{data && data.name}</h1>
-                    <Tech color={colors.logo}>{data?.tech.join(', ')}</Tech>
+                        <Title>{data && data.name}</Title>
+                    <Head>
+                        <Tech color={colors.logo}>{data?.tech.join(', ')}</Tech>
+                        {data?.link?.url && <DemoBtn color={colors.logo} href={data?.link?.url} target="_blank">
+                            {data?.link?.type === 'demo'? 'View Demo' : 'GitHub Repo'}
+                        </DemoBtn>}
+                    </Head>
                     {data?.description?.map((p, i) => (
                         <p 
                             key={`${i} ${Math.random()}`}
