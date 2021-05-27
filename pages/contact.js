@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import Link from 'next/link'
 import { ColorContext } from '../context/ColorProvider'
 import Navbar from '../components/Navbar'
 import Container from '../components/Container'
