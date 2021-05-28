@@ -72,6 +72,12 @@ const Content = styled.div`
     }
 `
 
+const OtherImg = styled.div`
+    background: url(${props => props.src});
+    width: 300px;
+    height: 500px;
+`
+
 
 const fetcher = async (url) => {
     const res = await fetch(url)
@@ -104,9 +110,8 @@ function ProjectPage(props) {
                         <Title>{data && data.name}</Title>
                     <Head>
                         <Tech color={colors.logo}>{data?.tech.join(', ')}</Tech>
-                        {data?.link?.url && <DemoBtn color={colors.logo} href={data?.link?.url} target="_blank">
-                            {data?.link?.type === 'demo'? 'View Demo' : 'GitHub Repo'}
-                        </DemoBtn>}
+                        {data?.demo && <DemoBtn color={colors.logo} href={data?.demo} target="_blank">View Demo</DemoBtn>}
+                        {data?.repo && <DemoBtn color={colors.logo} href={data?.repo} target="_blank">Github Repo</DemoBtn>}
                     </Head>
                     {data?.description?.map((p, i) => (
                         <p 
@@ -114,6 +119,7 @@ function ProjectPage(props) {
                             style={i === 0 ? {marginTop: '3rem'} : {}}
                         >{p}</p>
                     ))}
+                    {data?.otherImgs && <OtherImg src={data?.otherImgs[0]}/>}
                     {/* <div style={{position:'relative', paddingBottom: '53.59375000000001%', height: 0}}><iframe src="https://www.loom.com/embed/a8648ef4d9c84c768c8c508816b8e448" frameBorder="0" style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}}></iframe></div> */}
                 </Content>
             </div>
