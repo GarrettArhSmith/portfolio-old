@@ -1,6 +1,8 @@
 
 import React, { useContext } from 'react'
 import styled from 'styled-components'
+import { AiFillGithub } from 'react-icons/ai'
+import { MdWeb } from 'react-icons/md'
 import { ColorContext } from '../../context/ColorProvider'
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
@@ -22,12 +24,19 @@ const HeaderImg = styled.img`
 
 const Tech = styled.p`
     color: gray;
+    grid-column: 1 / 3;
 `
 
 const Head = styled.div`
-    display: flex;
-    place-items: center;
-    gap: 2rem;
+    display: grid;
+    place-items: start;
+    justify-content: left;
+    gap: 1rem;
+    @media (min-width: 768px) {
+        display: flex;
+        place-items: center;
+        gap: 2rem;
+    }
 `
 
 const Title = styled.h1`
@@ -36,13 +45,14 @@ const Title = styled.h1`
 const DemoBtn = styled.a`
     background: ${props => props.color};
     color: white;
-    height: 25px;
+    ${'' /* height: 25px; */}
     border: none;
     border-radius: 3px;
     filter: opacity(75%);
     transition: 0.2s ease;
-    padding: 0 6px;
+    padding: 4px 6px;
     display: grid;
+    grid-template-columns: auto auto;
     place-items: center;
     font-size: 0.9em;
     &:hover {
@@ -110,13 +120,15 @@ function ProjectPage(props) {
                         <Title>{data && data.name}</Title>
                     <Head>
                         <Tech color={colors.logo}>{data?.tech.join(', ')}</Tech>
-                        {data?.demo && <DemoBtn color={colors.logo} href={data?.demo} target="_blank">View Demo</DemoBtn>}
-                        {data?.repo && <DemoBtn color={colors.logo} href={data?.repo} target="_blank">Github Repo</DemoBtn>}
+                        {data?.demo && <DemoBtn color={colors.logo} href={data?.demo} target="_blank">
+                            <MdWeb style={{marginRight: 7}} />View Demo</DemoBtn>}
+                        {data?.repo && <DemoBtn color={colors.logo} href={data?.repo} target="_blank">
+                            <AiFillGithub style={{marginRight: 7}} />Github Repo</DemoBtn>}
                     </Head>
                     {data?.description?.map((p, i) => (
                         <p 
                             key={`${i} ${Math.random()}`}
-                            style={i === 0 ? {marginTop: '3rem'} : {}}
+                            style={i === 0 ? {marginTop: '2rem'} : {}}
                         >{p}</p>
                     ))}
                     {data?.otherImgs && <OtherImg src={data?.otherImgs[0]}/>}
