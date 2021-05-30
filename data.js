@@ -7,9 +7,15 @@ export const projects = [
         repo: 'https://github.com/GarrettArhSmith/react-fire-chat',
         tech: ['HTML', 'CSS', 'Javascript', 'React', 'Firebase'],
         thumbnail: '/reactfirechat-thumbnail.jpg',
-        description: [
-            `This is an app I made to get an introduction to Firebase. I was working on an experience project after completing the V School curriculum, and we had decided to go with Firebase for the backend. As part of the V School curriculum we learned MongoDB and Express so I wasn't familiar with Firebase. I decided I needed some practice, and voilà! React-Fire-Chat was born.`,
-            `The front-end of this app was (rather quickly) put together in React, and the back-end using Firebase, hence the url. While I love MongoDB and Express and all the freedoms you get with writing your own back-end, I thoroughly enjoyed using Firebase on this project. Everything was just so darn easy to set up, and Google authentication is a delight. I will definitely be revisiting Firebase in my future projects.`
+        content: [
+            {
+                tag: 'p',
+                text: `This is an app I made to get an introduction to Firebase. I was working on an experience project after completing the V School curriculum, and we had decided to go with Firebase for the backend. As part of the V School curriculum we learned MongoDB and Express so I wasn't familiar with Firebase. I decided I needed some practice, and voilà! React-Fire-Chat was born.`
+            },
+            {
+                tag: 'p',
+                text: `The front-end of this app was (rather quickly) put together in React, and the back-end using Firebase, hence the url. While I love MongoDB and Express and all the freedoms you get with writing your own back-end, I thoroughly enjoyed using Firebase on this project. Everything was just so darn easy to set up, and Google authentication is a delight. I will definitely be revisiting Firebase in my future projects.`
+            },
         ],
     },
     {
@@ -19,7 +25,16 @@ export const projects = [
         repo: 'https://github.com/VSchool-Team/vquad/tree/dashboard',
         tech: ['HTML', 'CSS', 'Javascript', 'React', 'Airtable API'],
         thumbnail: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
-        otherImgs: [],
+        content: [
+            {
+                tag: 'p',
+                text: `The Student Progress Visualizations project is an unfinished, evolving project. It started as an internal tool at V School, the bootcamp I graduated from and worked as a TA for. The project evolved so much, at least as far as planning, it took a while for it to get anywhere. There's still not much to it, but I have plans to build out a full-fledged dashboard. I started the project myself with Material UI and designed it for TAs to better track students' progress through the course and keep standup attendance. Later, I joined with some fellow TAs and students to restart and make a bigger tool to be used for many positions behind the scenes at V School. So I built out the dashboard in Material UI again, and later decided to scratch MUI and design it from scratch.`
+            },
+            {
+                tag: 'p',
+                text: ``
+            },
+        ],
     },
     {
         id: '3',

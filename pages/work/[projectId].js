@@ -114,7 +114,7 @@ function ProjectPage(props) {
             {error && <p>{error.message}</p>}
             {!data && <p>Loading...</p>}
             <div>
-                <HeaderImg src={data?.thumbnail ? data.thumbnail : 'https://source.unsplash.com/random'} />
+                <HeaderImg src={data?.thumbnail ? data.thumbnail : null} />
                 <Content>
                     <BackBtn />
                         <Title>{data && data.name}</Title>
@@ -125,12 +125,15 @@ function ProjectPage(props) {
                         {data?.repo && <DemoBtn color={colors.logo} href={data?.repo} target="_blank">
                             <AiFillGithub style={{marginRight: 7}} />Github Repo</DemoBtn>}
                     </Head>
-                    {data?.description?.map((p, i) => (
-                        <p 
-                            key={`${i} ${Math.random()}`}
-                            style={i === 0 ? {marginTop: '2rem'} : {}}
-                        >{p}</p>
-                    ))}
+                    {data?.content?.map((element, i) => {
+                        let Element = element.tag
+                        return (
+                            <Element 
+                                key={`${i} ${Math.random()}`}
+                                style={i === 0 ? {marginTop: '2rem'} : {}}
+                            >{element.text}</Element>
+                        )
+                    })}
                     {data?.otherImgs && <OtherImg src={data?.otherImgs[0]}/>}
                     {/* <div style={{position:'relative', paddingBottom: '53.59375000000001%', height: 0}}><iframe src="https://www.loom.com/embed/a8648ef4d9c84c768c8c508816b8e448" frameBorder="0" style={{position:'absolute', top:0, left:0, width:'100%', height:'100%'}}></iframe></div> */}
                 </Content>
