@@ -100,10 +100,11 @@ function Navbar(props) {
     const navLinkActive = {
         fontSize: '25px',
         fontWeight: 700,
-        // backgroundColor: "#f9f9f9",
+        backgroundColor: "#f9f9f9",
         // backgroundColor: "white",
-        background: "linear-gradient(320deg, rgba(249,249,249,1) 0%, rgba(255,255,255,1) 100%)",
-        transform: 'scaleY(1.1)',
+        // background: "linear-gradient(320deg, rgba(249,249,249,1) 0%, rgba(255,255,255,1) 100%)",
+        transform: 'scaleY(1.07)',
+        borderRadius: 5,
         boxShadow: 'rgb(0 0 0 / 20%) 0px 0 8px 0px',
         // textDecoration: "underline"
     }
