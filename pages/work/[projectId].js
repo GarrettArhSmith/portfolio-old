@@ -31,11 +31,11 @@ const Head = styled.div`
     display: grid;
     place-items: start;
     justify-content: left;
-    gap: 1rem;
+    ${'' /* gap: 0.5rem; */}
     @media (min-width: 768px) {
         display: flex;
         place-items: center;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 `
 
@@ -55,6 +55,7 @@ const DemoBtn = styled.a`
     grid-template-columns: auto auto;
     place-items: center;
     font-size: 0.9em;
+    margin-top: 0.5rem;
     &:hover {
         filter: opacity(100%);
         cursor: pointer;
@@ -62,6 +63,9 @@ const DemoBtn = styled.a`
     }
     &:active {
         transform: scale(1);
+    }
+    @media (min-width: 768px) {
+        margin-top: 0;
     }
 `
 

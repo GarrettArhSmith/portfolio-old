@@ -37,6 +37,7 @@ const NavLink = styled.a`
     width: 100vw;
     height: 100%;
     border-bottom: 1px solid #eee;
+    z-index: 10;
     &:hover {
         ${'' /* background-color: #f9f9f9; */}
     }
@@ -100,7 +101,11 @@ function Navbar(props) {
         fontSize: '25px',
         fontWeight: 700,
         // backgroundColor: "#f9f9f9",
-        textDecoration: "underline"
+        // backgroundColor: "white",
+        background: "linear-gradient(320deg, rgba(249,249,249,1) 0%, rgba(255,255,255,1) 100%)",
+        transform: 'scaleY(1.1)',
+        boxShadow: 'rgb(0 0 0 / 20%) 0px 0 8px 0px',
+        // textDecoration: "underline"
     }
 
     useEffect(() => {

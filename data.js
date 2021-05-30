@@ -2,7 +2,7 @@
 export const projects = [
     {
         id: '1',
-        name: 'Realtime Messaging App',
+        name: 'Instant Messaging App',
         demo: 'https://react-fire-chat.surge.sh/',
         repo: 'https://github.com/GarrettArhSmith/react-fire-chat',
         tech: ['HTML', 'CSS', 'Javascript', 'React', 'Firebase'],
@@ -27,12 +27,16 @@ export const projects = [
         thumbnail: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
         content: [
             {
-                tag: 'p',
-                text: `The Student Progress Visualizations project is an unfinished, evolving project. It started as an internal tool at V School, the bootcamp I graduated from and worked as a TA for. The project evolved so much, at least as far as planning, it took a while for it to get anywhere. There's still not much to it, but I have plans to build out a full-fledged dashboard. I started the project myself with Material UI and designed it for TAs to better track students' progress through the course and keep standup attendance. Later, I joined with some fellow TAs and students to restart and make a bigger tool to be used for many positions behind the scenes at V School. So I built out the dashboard in Material UI again, and later decided to scratch MUI and design it from scratch.`
+                tag: 'h5',
+                text: `Some Backstory...`
             },
             {
                 tag: 'p',
-                text: ``
+                text: `The Student Progress Visualizations project is an unfinished and evolving project. It started as an internal tool at V School, the bootcamp I graduated from and worked as a TA for. The project evolved so much, at least as far as planning, it took a while for it to get anywhere. There's still not much to it, but I have plans to build out a full-fledged dashboard. I started the project myself with Material UI and designed it for TAs to better track students' progress through the course and keep standup attendance. Later, I joined with some fellow TAs and students to restart and make a bigger tool to be used for many positions behind the scenes at V School. So I built out the dashboard in Material UI again, and later decided to scratch MUI and design it from scratch. Eventually, it was decided to cut the V School project short to allow TAs to focus more attention on student interactions.`
+            },
+            {
+                tag: 'p',
+                text: `The dashboard in it's current state has an app bar, a collapsible side drawer, and the main content area featuring some cards that will likely showcase some data/charts. Some basic JWT authentication is in place, with a separate auth page for sign in and sign up. When the user is logged in, the app bar features the user's initials in a clean little bubble that will open an options dropdown when clicked. It's unclear to me what, if anything, this project will become, but I enjoy working on it.`
             },
         ],
     },
