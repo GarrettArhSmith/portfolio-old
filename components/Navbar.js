@@ -20,7 +20,8 @@ const Nav = styled.nav`
     }
     @media (min-width: 768px) {
         grid-template-rows: 1fr;
-        grid-template-columns: 1.6fr repeat(3, 2fr);
+        grid-template-columns: repeat(4, 2fr);
+        place-items: center;
         height: 100px;
         position: fixed;
     }
@@ -44,7 +45,7 @@ const NavLink = styled.a`
     @media (min-width: 480px) {
     }
     @media (min-width: 768px) {
-        width: auto;
+        width: 75%;
         height: 100%;
         ${'' /* border: none; */}
     }
@@ -70,7 +71,7 @@ const Logo = styled.a`
     @media (min-width: 480px) {
     }
     @media (min-width: 768px) {
-        width: auto;
+        width: 75%;
         height: 100%;
         padding-left: 30px;
         padding-right: 30px;
@@ -108,6 +109,15 @@ function Navbar(props) {
         boxShadow: 'rgb(0 0 0 / 20%) 0px 0 8px 0px',
         // textDecoration: "underline"
     }
+    const logoActive = {
+        backgroundColor: "#f9f9f9",
+        // backgroundColor: "white",
+        // background: "linear-gradient(320deg, rgba(249,249,249,1) 0%, rgba(255,255,255,1) 100%)",
+        transform: 'scaleY(1.07)',
+        borderRadius: 5,
+        boxShadow: 'rgb(0 0 0 / 20%) 0px 0 8px 0px',
+        // textDecoration: "underline"
+    }
 
     useEffect(() => {
         [{name: "logo"}, ...routes].map(item => changeColor({target: item}))
@@ -120,6 +130,7 @@ function Navbar(props) {
                     style={{color: colors.logo}}
                     as={motion.a}
                     name="logo"
+                    initial={pathname === "/" && logoActive}
                     onMouseOver={changeColor}
                     whileHover={{fontSize: '65px'}}
                 >
