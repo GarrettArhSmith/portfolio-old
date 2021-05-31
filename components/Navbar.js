@@ -20,7 +20,7 @@ const Nav = styled.nav`
     }
     @media (min-width: 768px) {
         grid-template-rows: 1fr;
-        grid-template-columns: repeat(4, 2fr);
+        grid-template-columns: 1.8fr repeat(3, 2fr);
         place-items: center;
         height: 100px;
         position: fixed;

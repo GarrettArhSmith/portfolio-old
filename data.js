@@ -58,7 +58,8 @@ export const projects = [
     {
         id: '5',
         name: 'Food Ordering App',
-        repo: 'https://github.com/GarrettArhSmith/assignments/tree/master/mod6/food-ordering',
+        demo: "https://garrettsfood.herokuapp.com/",
+        repo: 'https://github.com/GarrettArhSmith/food-ordering',
         tech: ['HTML', 'CSS', 'Javascript', 'React', 'MongoDB', 'Express', "Token Authentication"],
         thumbnail: 'https://images.pexels.com/photos/5920631/pexels-photo-5920631.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     },
