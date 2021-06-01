@@ -21,8 +21,8 @@ export const projects = [
     {
         id: '2',
         name: 'Student Progress Visualizations',
-        demo: 'https://vquad-demo.surge.sh/',
-        repo: 'https://github.com/VSchool-Team/vquad/tree/dashboard',
+        demo: 'https://just-a-dashboard.herokuapp.com/',
+        repo: 'https://github.com/GarrettArhSmith/dashboard',
         tech: ['HTML', 'CSS', 'Javascript', 'React', 'Airtable API'],
         thumbnail: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
         content: [
@@ -51,7 +51,8 @@ export const projects = [
     {
         id: '4',
         name: 'Anonymous Forum',
-        repo: 'https://github.com/tlovell5/forum_group_project',
+        demo: 'https://group-forum.herokuapp.com',
+        repo: 'https://github.com/GarrettArhSmith/group-forum',
         tech: ['HTML', 'CSS', 'Javascript', 'React', 'MongoDB', 'Express'],
         thumbnail: '/anonymousforum-thumbnail.jpeg',
     },
