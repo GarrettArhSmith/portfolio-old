@@ -6,6 +6,7 @@ import { MdWeb } from 'react-icons/md'
 import { ColorContext } from '../../context/ColorProvider'
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
+import Head from 'next/head'
 
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
@@ -27,7 +28,7 @@ const Tech = styled.p`
     grid-column: 1 / 3;
 `
 
-const Head = styled.div`
+const Header = styled.div`
     display: grid;
     place-items: start;
     justify-content: left;
@@ -113,6 +114,11 @@ function ProjectPage(props) {
     )
 
     return (
+        <>
+        <Head>
+            <title>Garrett Smith</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <Container>
             <Navbar />
             {error && <p>{error.message}</p>}
@@ -122,13 +128,13 @@ function ProjectPage(props) {
                 <Content>
                     <BackBtn />
                         <Title>{data && data.name}</Title>
-                    <Head>
+                    <Header>
                         <Tech color={colors.logo}>{data?.tech.join(', ')}</Tech>
                         {data?.demo && <DemoBtn color={colors.logo} href={data?.demo} target="_blank">
                             <MdWeb style={{marginRight: 7}} />View Demo</DemoBtn>}
                         {data?.repo && <DemoBtn color={colors.logo} href={data?.repo} target="_blank">
                             <AiFillGithub style={{marginRight: 7}} />Github Repo</DemoBtn>}
-                    </Head>
+                    </Header>
                     {data?.content?.map((element, i) => {
                         let Element = element.tag
                         return (
@@ -143,6 +149,7 @@ function ProjectPage(props) {
                 </Content>
             </div>
         </Container>
+        </>
     );
 }
 

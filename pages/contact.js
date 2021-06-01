@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai'
 import { VscFilePdf } from 'react-icons/vsc'
 import BackBtn from '../components/BackBtn';
+import Head from 'next/head'
 
 const LinksContainer = styled.div`
     padding-left: 0;
@@ -34,6 +35,11 @@ function contact(props) {
     }
 
     return (
+        <>
+        <Head>
+            <title>Garrett Smith</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <Container>
             <Navbar />
             <LinksContainer color={colors.logo}>
@@ -51,6 +57,7 @@ function contact(props) {
                 </a>
             </LinksContainer>
         </Container>
+        </>
     );
 }
 

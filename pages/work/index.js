@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Navbar from '../../components/Navbar'
 import Project from '../../components/Project'
 import Container from '../../components/Container'
+import Head from 'next/head'
 
 const ProjectList = styled.ul`
     padding: 0;
@@ -41,6 +42,11 @@ function work(props) {
 
     // const projects = [0,1,2,3]
     return (
+        <>
+        <Head>
+            <title>Garrett Smith</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <Container>
             <Navbar />
             {error && <p>{error.message}</p>}
@@ -51,6 +57,7 @@ function work(props) {
                 ))}
             </ProjectList>
         </Container>
+        </>
     )
 }
 

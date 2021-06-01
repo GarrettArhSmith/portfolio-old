@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar'
 import Container from '../components/Container'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 
 import Img from '../components/Img'
 import styled from 'styled-components'
@@ -24,7 +25,12 @@ const Contents = styled.div`
 
 function about(props) {
 
-    return (        
+    return (  
+        <>   
+        <Head>
+            <title>Garrett Smith</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>   
         <Container>
             <Navbar />
             <Container 
@@ -50,6 +56,7 @@ function about(props) {
                 />
             </Container>
         </Container>
+        </>
     );
 }
 
