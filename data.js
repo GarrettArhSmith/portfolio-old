@@ -45,8 +45,18 @@ export const projects = [
         name: 'Weather App',
         demo: 'https://gsmithweather.surge.sh/',
         repo: 'https://github.com/GarrettArhSmith/assignments/tree/master/mod4/react/weather',
-        tech: ['HTML', 'CSS', 'Javascript', 'React', 'Weather API'],
+        tech: ['HTML', 'CSS', 'Javascript', 'React', 'React Router', 'REST API'],
         thumbnail: 'https://images.pexels.com/photos/1463530/pexels-photo-1463530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        content: [
+            {
+                tag: 'p',
+                text: `The weather app was an app I made for a V School assignment. I created the app using React and fetched weather data from an API with axios. React Router was used for routing.`
+            },
+            {
+                tag: 'p',
+                text: `Users can search for weather data by location, and see the current weather. You can also select different time frames for forecasts, and save locations to the sidebar for easy access.`
+            },
+        ],
     },
     {
         id: '4',
