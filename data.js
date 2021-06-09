@@ -54,7 +54,7 @@ export const projects = [
             },
             {
                 tag: 'p',
-                text: `Users can search for weather data by location, and see the current weather. You can also select different time frames for forecasts, and save locations to the sidebar for easy access.`
+                text: `Users can search for weather data by location, and see the current weather. You can also select different time frames for forecasts, and save locations to the sidebar for easy access. Saved locations are stored in local storage so that they persist through a refresh. The Hourly forecast includes the probability of precipitation and wind speed.`
             },
         ],
     },
