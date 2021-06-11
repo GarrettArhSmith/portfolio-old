@@ -96,10 +96,6 @@ export const projects = [
                 tag: 'p',
                 text: `Customers can view all available restaurants, and select which items they want to add to their cart. Items from only one restaurant can be added at a time. They can view what's currently in their cart and submit the order.`
             },
-            {
-                tag: 'p',
-                text: `Please look past the very unstyled auth page until I can get around to prettying it up.`
-            },
         ]
     },
     {
