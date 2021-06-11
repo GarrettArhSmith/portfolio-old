@@ -45,7 +45,7 @@ function about(props) {
                 >
                     <div style={{maxWidth: 550}}>
                         <h1>ABOUT ME</h1>
-                        <p>I'm an aspiring Full-Stack Web Developer, and passionate about developing applications that better the lives of others. I'm currently enrolled in V-School, a FullStack Web Development bootcamp, and I'm constantly learning new skills and improving current ones to make that possible. I also love teaching others about my craft. We are all teachers. We are all students.</p>
+                        <p>My name is Garrett. I love to make things and learn things. The internet and I grew up together, so I got to know it a bit. I'm a full-stack web developer with a specialty in React. I'm passionate about my craft but enjoy dabbling in so many others. Learning is the best investment you can make, and I believe we all have to work together to make it a reality for everyone. We are all teachers. We are all students.</p>
                     </div>
                 </Contents>
                 <Img src="/headshot.jpg"
