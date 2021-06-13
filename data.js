@@ -1,6 +1,64 @@
 
 export const projects = [
     {
+        id: '5',
+        name: 'Food Ordering App',
+        demo: "https://garrettsfood.herokuapp.com/",
+        repo: 'https://github.com/GarrettArhSmith/food-ordering',
+        tech: ['HTML', 'CSS', 'Javascript', 'React', 'MongoDB', 'Express', "Token Authentication"],
+        thumbnail: 'https://images.pexels.com/photos/5920631/pexels-photo-5920631.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        content: [
+            {
+                tag: 'p',
+                text: `The app is designed for use by three different kinds of users: admins (delivery business owners), restaurant owners, and customers. Admins have access to all the tools they need to run the business and manage users.`
+            },
+            {
+                tag: 'p',
+                text: `Restaurant owners can create, view and manage their restaurants. They can create different "menus" for each restaurant, and add new items to those menus. They can also see all the orders that have come in for that restaurant.`
+            },
+            {
+                tag: 'p',
+                text: `Customers can view all available restaurants, and select which items they want to add to their cart. Items from only one restaurant can be added at a time. They can view what's currently in their cart and submit the order.`
+            },
+        ]
+    },
+    {
+        id: '6',
+        name: 'Rock the Vote',
+        demo: 'https://r-t-v.herokuapp.com/',
+        repo: 'https://github.com/GarrettArhSmith/rock-the-vote',
+        tech: ['HTML', 'CSS', 'Javascript', 'React', 'MongoDB', 'Express', "Token Authentication"],
+        thumbnail: 'https://images.pexels.com/photos/6257070/pexels-photo-6257070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        content: [
+            {
+                tag: 'p',
+                text: `Rock the vote is a platform for civic engagement. Users make posts, comment on those posts, and upvote and downvote both posts and comments. The platform focuses on political discussion and allows users to express their views and discuss different topics.`
+            },
+            {
+                tag: 'p',
+                text: `Though I built this as a V School assignment, I based the design and the voting system on reddit, and I think if I continued to work on the project, I would build it out as a reddit clone.`
+            },
+        ],
+    },
+    {
+        id: '3',
+        name: 'Weather App',
+        demo: 'https://gsmithweather.surge.sh/',
+        repo: 'https://github.com/GarrettArhSmith/assignments/tree/master/mod4/react/weather',
+        tech: ['HTML', 'CSS', 'Javascript', 'React', 'React Router', 'REST API'],
+        thumbnail: 'https://images.pexels.com/photos/1463530/pexels-photo-1463530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        content: [
+            {
+                tag: 'p',
+                text: `The weather app was an app I made for a V School assignment. I created the app using React and fetched weather data from an API with axios. React Router was used for routing.`
+            },
+            {
+                tag: 'p',
+                text: `Users can search for weather data by location, and see the current weather. You can also select different time frames for forecasts, and save locations to the sidebar for easy access. Saved locations are stored in local storage so that they persist through a refresh. The Hourly forecast includes the probability of precipitation and wind speed.`
+            },
+        ],
+    },
+    {
         id: '1',
         name: 'Instant Messaging App',
         demo: 'https://react-fire-chat.surge.sh/',
@@ -41,24 +99,6 @@ export const projects = [
         ],
     },
     {
-        id: '3',
-        name: 'Weather App',
-        demo: 'https://gsmithweather.surge.sh/',
-        repo: 'https://github.com/GarrettArhSmith/assignments/tree/master/mod4/react/weather',
-        tech: ['HTML', 'CSS', 'Javascript', 'React', 'React Router', 'REST API'],
-        thumbnail: 'https://images.pexels.com/photos/1463530/pexels-photo-1463530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-        content: [
-            {
-                tag: 'p',
-                text: `The weather app was an app I made for a V School assignment. I created the app using React and fetched weather data from an API with axios. React Router was used for routing.`
-            },
-            {
-                tag: 'p',
-                text: `Users can search for weather data by location, and see the current weather. You can also select different time frames for forecasts, and save locations to the sidebar for easy access. Saved locations are stored in local storage so that they persist through a refresh. The Hourly forecast includes the probability of precipitation and wind speed.`
-            },
-        ],
-    },
-    {
         id: '4',
         name: 'Anonymous Forum',
         demo: 'https://group-forum.herokuapp.com',
@@ -76,44 +116,4 @@ export const projects = [
             },
         ]
     },
-    {
-        id: '5',
-        name: 'Food Ordering App',
-        demo: "https://garrettsfood.herokuapp.com/",
-        repo: 'https://github.com/GarrettArhSmith/food-ordering',
-        tech: ['HTML', 'CSS', 'Javascript', 'React', 'MongoDB', 'Express', "Token Authentication"],
-        thumbnail: 'https://images.pexels.com/photos/5920631/pexels-photo-5920631.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-        content: [
-            {
-                tag: 'p',
-                text: `The app is designed for use by three different kinds of users: admins (delivery business owners), restaurant owners, and customers. Admins have access to all the tools they need to run the business and manage users.`
-            },
-            {
-                tag: 'p',
-                text: `Restaurant owners can create, view and manage their restaurants. They can create different "menus" for each restaurant, and add new items to those menus. They can also see all the orders that have come in for that restaurant.`
-            },
-            {
-                tag: 'p',
-                text: `Customers can view all available restaurants, and select which items they want to add to their cart. Items from only one restaurant can be added at a time. They can view what's currently in their cart and submit the order.`
-            },
-        ]
-    },
-    {
-        id: '6',
-        name: 'Rock the Vote',
-        demo: 'https://r-t-v.herokuapp.com/',
-        repo: 'https://github.com/GarrettArhSmith/rock-the-vote',
-        tech: ['HTML', 'CSS', 'Javascript', 'React', 'MongoDB', 'Express', "Token Authentication"],
-        thumbnail: 'https://images.pexels.com/photos/6257070/pexels-photo-6257070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-        content: [
-            {
-                tag: 'p',
-                text: `Rock the vote is a platform for civic engagement. Users make posts, comment on those posts, and upvote and downvote both posts and comments. The platform focuses on political discussion and allows users to express their views and discuss different topics.`
-            },
-            {
-                tag: 'p',
-                text: `Though I built this as a V School assignment, I based the design and the voting system on reddit, and I think if I continued to work on the project, I would build it out as a reddit clone.`
-            },
-        ],
-    }
 ]
