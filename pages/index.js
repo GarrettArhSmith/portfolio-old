@@ -61,6 +61,9 @@ export default function Home() {
                 onMouseOver={() => changeColor({target: {name: "logo"}})}
             > GARRETT SMITH</Header>
         </NameContainer>
+        <p>This portfolio site is not up-to-date with my current experience, and the projects on the work page may not be deployed anymore. 
+            I am building a new one. One that I'm more proud of, and that reflects me and my current experience better. For now, you can explore this one, and take a look at my resume 
+            (from my linkedIn, not from the contact page) to see my most recent experience. Thanks!</p>
       </Container>
     </div>
   )
